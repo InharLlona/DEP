@@ -1,5 +1,5 @@
 import React from "react";
-import Flexbox from 'flexbox-react';
+import Flexbox from "flexbox-react";
 import { MyContext} from "../Contextos";
 
 interface PictureInfo {

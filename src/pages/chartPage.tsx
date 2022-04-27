@@ -1,5 +1,5 @@
 import React from "react";
-import Flexbox from 'flexbox-react';
+import Flexbox from "flexbox-react";
 
 import "react-datepicker/dist/react-datepicker.css";
 import {Header} from "../dispatchChartPageComponents/header"

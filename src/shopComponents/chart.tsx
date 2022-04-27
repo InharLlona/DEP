@@ -1,5 +1,5 @@
 import React from "react";
-import Flexbox from 'flexbox-react';
+import Flexbox from "flexbox-react";
 import { MyContext,MyChartContext } from "../Contextos";
 import { Link } from "react-router-dom";
 import DeleteIcon from '@material-ui/icons/Delete';

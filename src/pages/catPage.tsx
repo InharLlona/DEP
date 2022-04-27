@@ -1,5 +1,5 @@
 import React from "react";
-import Flexbox from 'flexbox-react';
+import Flexbox from "flexbox-react";
 import {MyChartContext } from "../Contextos";
 import { Link } from "react-router-dom";
 import {Chart} from '../shopComponents/chart'
