@@ -13,7 +13,8 @@ module.exports = {
   devtool: "eval-source-map",
   stats: "errors-only",
   output: {
-    filename: "[name].[chunkhash].js",
+    filename: './js/[name].[chunkhash].js',
+    assetModuleFilename: 'images/[hash][ext][query]',
   },
   module: {
     rules: [
@@ -55,6 +56,19 @@ module.exports = {
         ],
       },
     ],
+  },
+  optimization: {
+    runtimeChunk: 'single',
+    splitChunks: {
+      cacheGroups: {
+        vendor: {
+          chunks: 'all',
+          name: 'vendor',
+          test: /[\\/]node_modules[\\/]/,
+          enforce: true,
+        },
+      },
+    },
   },
   plugins: [
     //Generate index.html in /dist => https://github.com/ampedandwired/html-webpack-plugin
